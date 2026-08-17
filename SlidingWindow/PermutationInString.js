@@ -91,3 +91,37 @@ function mapsEqual(need, window) {
   }
   return true;
 }
+
+
+
+// Two Array Method :
+
+function checkInclusion(s1, s2) {
+    if (s1.length > s2.length) return false;
+
+    const need = new Array(26).fill(0);
+    const window = new Array(26).fill(0);
+    const a = "a".charCodeAt(0);
+
+    for (let i = 0; i < s1.length; i++) {
+        need[s1.charCodeAt(i) - a]++;
+        window[s2.charCodeAt(i) - a]++;
+    }
+
+    if (arraysEqual(need, window)) return true;
+
+    for (let i = s1.length; i < s2.length; i++) {
+        window[s2.charCodeAt(i) - a]++;
+        window[s2.charCodeAt(i - s1.length) - a]--;
+        if (arraysEqual(need, window)) return true;
+    }
+
+    return false;
+}
+
+function arraysEqual(a, b) {
+    for (let i = 0; i < 26; i++) {
+        if (a[i] !== b[i]) return false;
+    }
+    return true;
+}
