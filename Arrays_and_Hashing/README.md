@@ -14,5 +14,7 @@ This category covers problems that primarily rely on arrays, hash maps, and hash
 2. **Instant Lookup (The Two Sum pattern)**: Using a hash map to remember past elements to satisfy a target condition without nested loops.
 3. **Prefix Sums**: Precomputing cumulative sums to quickly answer queries about subarray sums.
 4. **Sequence Tracking**: Using a hash set to group elements and efficiently check for boundaries of consecutive sequences.
+5. **Two-Way Mapping (Bijection)**: Using two hash maps to confirm a one-to-one correspondence between two collections in both directions at once (e.g., Word Pattern).
+6. **Cycle Detection with a Set**: Recording every value seen while repeatedly transforming a number, so a repeated value signals a loop instead of the process running forever (e.g., Happy Number).
 
 By combining array iterations with hash lookups, we can often reduce a naive `O(n^2)` time complexity down to `O(n)`.

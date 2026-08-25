@@ -10,7 +10,8 @@ By strategically moving the pointers based on specific conditions, we can find p
 
 ## Common Patterns
 
-1. **Opposite Ends**: Placing one pointer at the start and the other at the end of a sorted array or string. They move inward towards each other based on comparisons (e.g., Two Sum on a sorted array, reversing a string, Container with Most Water).
+1. **Opposite Ends**: Placing one pointer at the start and the other at the end of a sorted array or string. They move inward towards each other based on comparisons (e.g., Two Sum on a sorted array, reversing a string, Container with Most Water, Valid Palindrome, Trapping Rain Water).
 2. **Same Direction**: Both pointers start at the same end but move at different speeds or intervals. Often one pointer acts as an iterator while the other points to the position where the next valid element should go (e.g., removing duplicates from a sorted array).
+3. **Three-Way Partition (Dutch National Flag)**: Three pointers divide the array into regions (e.g., low/mid/high) that get built up as a middle pointer sweeps through once, swapping elements into their correct region as it goes (e.g., Sort Colors).
 
 This technique relies heavily on the sequence being sorted or having monotonic properties that guide the pointer movements predictably.

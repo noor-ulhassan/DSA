@@ -12,6 +12,7 @@ The problems are categorized by topic to facilitate structured learning:
 - **[Strings](./Strings)**: Problems dealing with string parsing, character manipulation, and text algorithms.
 - **[Heaps](./Heaps)**: Problems utilizing priority queues for efficiently maintaining running maximums or minimums.
 - **[Greedy](./Greedy)**: Problems where making locally optimal choices at each step leads to a globally optimal solution.
+- **[Linked_List](./Linked_List)**: Problems involving singly linked lists, solved through in-place pointer rewiring and fast/slow pointer traversal.
 
 ## Solution Format
 
